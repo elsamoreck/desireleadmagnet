@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why She Suddenly Stopped Initiating - The Real Reason</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 25%, #2d1b3d 50%, #1a1a1a 75%, #0f0f0f 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(185, 28, 28, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(185, 28, 28, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.02) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .heart-icon {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0;
+            animation: float-hearts 12s ease-in-out infinite;
+            color: rgba(185, 28, 28, 0.3);
+        }
+        
+        .heart-icon:nth-child(1) { 
+            top: 20%; 
+            left: 10%; 
+            animation-delay: 0s; 
+        }
+        .heart-icon:nth-child(2) { 
+            top: 60%; 
+            right: 15%; 
+            animation-delay: 3s; 
+        }
+        .heart-icon:nth-child(3) { 
+            bottom: 30%; 
+            left: 20%; 
+            animation-delay: 6s; 
+        }
+        .heart-icon:nth-child(4) { 
+            top: 40%; 
+            right: 25%; 
+            animation-delay: 9s; 
+        }
+        
+        @keyframes float-hearts {
+            0%, 90%, 100% { 
+                opacity: 0; 
+                transform: translateY(20px) scale(0.8) rotate(0deg); 
+            }
+            10%, 80% { 
+                opacity: 1; 
+                transform: translateY(0) scale(1) rotate(15deg); 
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 80px 0;
+        }
+        
+        .hero-text h1 {
+            font-size: 4.2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 30%, #b91c1c 60%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            text-shadow: 0 0 30px rgba(185, 28, 28, 0.3);
+        }
+        
+        .hero-text .highlight {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        
+        .hero-text .hook {
+            font-size: 1.6rem;
+            color: #b91c1c;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-style: italic;
+        }
+        
+        .hero-text .subheading {
+            font-size: 1.4rem;
+            color: #e9ecef;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .psychology-preview {
+            background: linear-gradient(135deg, rgba(248, 249, 250, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            border: 2px solid #b91c1c;
+            border-left: 6px solid #b91c1c;
+            padding: 35px;
+            margin: 40px 0;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(185, 28, 28, 0.15);
+        }
+        
+        .psychology-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 25%, rgba(185, 28, 28, 0.02) 25%, rgba(185, 28, 28, 0.02) 50%, transparent 50%, transparent 75%, rgba(185, 28, 28, 0.02) 75%);
+            background-size: 15px 15px;
+            pointer-events: none;
+        }
+        
+        .psychology-preview h3 {
+            color: #b91c1c;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px rgba(185, 28, 28, 0.3);
+        }
+        
+        .psychology-preview ul {
+            list-style: none;
+            color: #1a1a1a;
+        }
+        
+        .psychology-preview li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .psychology-preview li::before {
+            content: '🔥';
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .passion-meter {
+            width: 350px;
+            height: 500px;
+            background: linear-gradient(145deg, #1f2937, #111827);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(185, 28, 28, 0.3);
+        }
+        
+        .passion-meter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 25%, rgba(185, 28, 28, 0.05) 25%, rgba(185, 28, 28, 0.05) 50%, transparent 50%, transparent 75%, rgba(185, 28, 28, 0.05) 75%);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
+        
+        .meter-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .meter-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .meter-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        .meter-gauge {
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            position: relative;
+            border-radius: 50%;
+            background: conic-gradient(
+                #ef4444 0deg,
+                #f97316 45deg,
+                #eab308 90deg,
+                #22c55e 135deg,
+                #22c55e 180deg
+            );
+            padding: 20px;
+        }
+        
+        .meter-inner {
+            width: 100%;
+            height: 100%;
+            background: #1f2937;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .meter-value {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ef4444;
+        }
+        
+        .meter-label {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-top: 5px;
+        }
+        
+        .meter-needle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 80px;
+            background: white;
+            transform-origin: bottom center;
+            transform: translate(-50%, -100%) rotate(25deg);
+            border-radius: 2px;
+            animation: needle-worry 3s ease-in-out infinite;
+        }
+        
+        @keyframes needle-worry {
+            0%, 100% { transform: translate(-50%, -100%) rotate(25deg); }
+            50% { transform: translate(-50%, -100%) rotate(35deg); }
+        }
+        
+        .meter-status {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .status-text {
+            color: #ef4444;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .status-desc {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .early-cta-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #b91c1c, #991b1b);
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: 0 15px 40px rgba(185, 28, 28, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+        
+        .early-cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .early-cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .early-cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(185, 28, 28, 0.5);
+            background: linear-gradient(145deg, #991b1b, #b91c1c);
+        }
+        
+        .reasons-section {
+            background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+            padding: 100px 0;
+            color: white;
+            position: relative;
+        }
+        
+        .reasons-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M20 5 L35 35 L5 35 Z" fill="rgba(185,28,28,0.03)" stroke="rgba(185,28,28,0.08)" stroke-width="0.5"/></svg>') repeat;
+            pointer-events: none;
+        }
+        
+        .reasons-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .reasons-header h2 {
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #b91c1c 0%, #ffffff 50%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            text-shadow: 0 0 20px rgba(185, 28, 28, 0.2);
+        }
+        
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .reason-card {
+            background: linear-gradient(145deg, rgba(31, 41, 55, 0.8), rgba(0, 0, 0, 0.9));
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid rgba(185, 28, 28, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .reason-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(185, 28, 28, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .reason-card:hover::before {
+            left: 100%;
+        }
+        
+        .reason-card:hover {
+            transform: translateY(-5px);
+            border-color: #b91c1c;
+        }
+        
+        .reason-number {
+            background: linear-gradient(135deg, #b91c1c, #ef4444);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .reason-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #b91c1c;
+            font-weight: 700;
+        }
+        
+        .reason-card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        
+        .revelation-section {
+            background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 30%, #dc2626 70%, #7f1d1d 100%);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .revelation-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><circle cx="30" cy="30" r="2" fill="rgba(255,255,255,0.08)"/><circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.06)"/><circle cx="45" cy="45" r="1" fill="rgba(255,255,255,0.06)"/></svg>') repeat;
+            animation: float-pattern 25s linear infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes float-pattern {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-60px) translateY(-60px); }
+        }
+        
+        .revelation-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .revelation-section h2 {
+            font-size: 3.2rem;
+            color: white;
+            margin-bottom: 30px;
+            font-weight: 900;
+            text-shadow: 0 0 30px rgba(0,0,0,0.5);
+        }
+        
+        .revelation-text {
+            font-size: 1.6rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 50px;
+            font-weight: 400;
+            text-shadow: 0 0 20px rgba(0,0,0,0.3);
+            line-height: 1.5;
+        }
+        
+        .transformation-section {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1f2937 25%, #374151 50%, #1f2937 75%, #0a0a0a 100%);
+            padding: 100px 0;
+            color: white;
+            position: relative;
+        }
+        
+        .transformation-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .transformation-header h2 {
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #ffffff 0%, #b91c1c 50%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            text-shadow: 0 0 20px rgba(185, 28, 28, 0.2);
+        }
+        
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .transformation-card {
+            background: linear-gradient(145deg, rgba(31, 41, 55, 0.8), rgba(0, 0, 0, 0.9));
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(185, 28, 28, 0.2);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .transformation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(185, 28, 28, 0.1), transparent);
+            transition: left 0.8s ease;
+        }
+        
+        .transformation-card:hover::before {
+            left: 100%;
+        }
+        
+        .transformation-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: #b91c1c;
+            box-shadow: 0 25px 50px rgba(185, 28, 28, 0.3);
+        }
+        
+        .transformation-icon {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            display: block;
+            filter: drop-shadow(0 0 10px rgba(185, 28, 28, 0.3));
+        }
+        
+        .transformation-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #b91c1c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .transformation-card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1f2937 0%, #b91c1c 30%, #dc2626 70%, #1f2937 100%);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-section h2 {
+            font-size: 3.2rem;
+            color: white;
+            margin-bottom: 30px;
+            font-weight: 900;
+            text-shadow: 0 0 30px rgba(0,0,0,0.5);
+        }
+        
+        .cta-section .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 50px;
+            font-weight: 400;
+            text-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        
+        .price {
+            font-size: 4rem;
+            color: white;
+            font-weight: 900;
+            margin: 40px 0;
+            text-shadow: 0 0 40px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        
+        .price::before {
+            content: 'Only';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .buy-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            color: #0a0a0a;
+            padding: 25px 60px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 60px;
+            transition: all 0.4s ease;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .buy-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(185,28,28,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .buy-button:hover::before {
+            left: 100%;
+        }
+        
+        .buy-button:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+            background: linear-gradient(145deg, #f8fafc, #ffffff);
+        }
+        
+        .urgency-section {
+            background: linear-gradient(135deg, #111827 0%, #000000 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .urgency-section h2 {
+            font-size: 2.4rem;
+            color: #b91c1c;
+            margin-bottom: 25px;
+        }
+        
+        .urgency-text {
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .final-cta {
+            background: linear-gradient(145deg, #b91c1c, #dc2626);
+            color: white;
+            padding: 25px 70px;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 60px;
+            display: inline-block;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 50px rgba(185, 28, 28, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .final-cta:hover::before {
+            left: 100%;
+        }
+        
+        .final-cta:hover {
+            transform: scale(1.08) translateY(-3px);
+            box-shadow: 0 0 60px rgba(185, 28, 28, 0.6);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+            
+            .passion-meter {
+                width: 300px;
+                height: 450px;
+            }
+            
+            .transformation-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .reasons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="floating-elements">
+            <div class="heart-icon">💔</div>
+            <div class="heart-icon">🔥</div>
+            <div class="heart-icon">💔</div>
+            <div class="heart-icon">🔥</div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Why She Suddenly Stopped <span class="highlight">Initiating</span></h1>
+                    <p class="hook">"It's not what you think... and it's completely fixable"</p>
+                    <p class="subheading">The real psychology behind why your woman lost her desire (and how to reignite it completely)</p>
+                    
+                    <div class="psychology-preview">
+                        <h3>The Truth No One Tells You:</h3>
+                        <ul>
+                            <li><strong>It's not about her libido</strong> - the passion is still there</li>
+                            <li><strong>It's not about you being unattractive</strong> - she chose you for a reason</li>
+                            <li><strong>It's about polarity</strong> - the masculine/feminine dynamic has died</li>
+                            <li><strong>Most men wait</strong> hoping it fixes itself (it doesn't)</li>
+                            <li><strong>But a few understand</strong> the psychology and reignite her desire completely</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 40px;">
+                        <a href="https://buy.stripe.com/5kQ3co0zIbPccmubVc6Vq0j" class="early-cta-button" target="_blank">Get The Blueprint Now</a>
+                        <p style="margin-top: 15px; color: rgba(233, 236, 239, 0.8); font-size: 0.9rem;">✓ Instant Access • ✓ Reignite Her Passion Tonight</p>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="passion-meter">
+                        <div class="meter-header">
+                            <div class="meter-title">Passion Level</div>
+                            <div class="meter-subtitle">Relationship Temperature</div>
+                        </div>
+                        
+                        <div class="meter-gauge">
+                            <div class="meter-inner">
+                                <div class="meter-value">15%</div>
+                                <div class="meter-label">CRITICAL</div>
+                            </div>
+                            <div class="meter-needle"></div>
+                        </div>
+                        
+                        <div class="meter-status">
+                            <div class="status-text">⚠️ Warning Zone</div>
+                            <div class="status-desc">When passion drops below 20%, most relationships don't recover without intervention</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reasons-section">
+        <div class="container">
+            <div class="reasons-header">
+                <h2>The 6 Passion Killers</h2>
+                <p style="font-size: 1.3rem; color: #cbd5e1;">Why she suddenly stopped initiating (the real reasons)</p>
+            </div>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">1</div>
+                    <h3>You Became Too Predictable in Bed</h3>
+                    <p>Same routine, same positions, same boring script. She knows exactly what's coming next and her mind wanders to her grocery list instead of fantasizing about you.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">2</div>
+                    <h3>You Stopped Building Tension Outside the Bedroom</h3>
+                    <p>No flirting, no mystery, no emotional foreplay. You think intimacy starts in the bedroom, but for her, it starts with how you make her feel throughout the day.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">3</div>
+                    <h3>You're Not Leading - You're Asking</h3>
+                    <p>"What do you want to do?" on a date kills desire faster than anything. She wants to feel your masculine energy leading her, not constantly making decisions for both of you.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">4</div>
+                    <h3>She Feels Like a Chore on Your To-Do List</h3>
+                    <p>Your intimacy has become mechanical instead of passionate. She can sense when you're going through the motions rather than truly desiring her.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">5</div>
+                    <h3>You Stopped Making Her Feel Desired</h3>
+                    <p>You don't compliment her anymore. You've stopped noticing the little things she does to look good for you. She feels invisible and unappreciated.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">6</div>
+                    <h3>You Don't Seem to Care If Other Guys Hit on Her</h3>
+                    <p>You think you're being mature and secure. She thinks you've given up and don't value her enough to feel protective. This kills her sense of being desired.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="revelation-section">
+        <div class="container">
+            <div class="revelation-content">
+                <h2>The Real Truth</h2>
+                <p class="revelation-text">When a woman stops initiating, it's not because she's lost interest in intimacy. It's because the polarity in your dynamic is dead. Most men assume the problem will fix itself and are shocked when the relationship ends. But a few understand this psychology and reignite her desire completely.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="transformation-section">
+        <div class="container">
+            <div class="transformation-header">
+                <h2>What You'll Discover in "Reignite Her Passion"</h2>
+                <p style="font-size: 1.3rem; color: #cbd5e1;">The complete blueprint to become irresistible to her again</p>
+            </div>
+            
+            <div class="transformation-grid">
+                <div class="transformation-card">
+                    <span class="transformation-icon">🔥</span>
+                    <h3>The Polarity Reset Method</h3>
+                    <p>How to rebuild the masculine/feminine dynamic that creates natural attraction and desire. This is the foundation everything else builds on.</p>
+                </div>
+                
+                <div class="transformation-card">
+                    <span class="transformation-icon">⚡</span>
+                    <h3>Tension Building Techniques</h3>
+                    <p>Create anticipation and desire throughout the day with specific words, touches, and behaviors that make her think about you constantly.</p>
+                </div>
+                
+                <div class="transformation-card">
+                    <span class="transformation-icon">👑</span>
+                    <h3>Masculine Leadership Framework</h3>
+                    <p>How to lead with confidence in and out of the bedroom. Stop asking "what do you want?" and start making decisions that turn her on.</p>
+                </div>
+                
+                <div class="transformation-card">
+                    <span class="transformation-icon">💎</span>
+                    <h3>The Desire Amplification System</h3>
+                    <p>Make her feel like the most desired woman in the world through specific compliments, attention, and protective behaviors that reignite her passion.</p>
+                </div>
+                
+                <div class="transformation-card">
+                    <span class="transformation-icon">🎯</span>
+                    <h3>Bedroom Transformation Blueprint</h3>
+                    <p>Break out of predictable routines with strategies that create excitement, anticipation, and variety that keeps her craving more.</p>
+                </div>
+                
+                <div class="transformation-card">
+                    <span class="transformation-icon">🔄</span>
+                    <h3>The 30-Day Reignition Plan</h3>
+                    <p>Step-by-step implementation guide that shows you exactly what to do each day to systematically rebuild her desire and passion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section" id="blueprint">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Reignite Her Passion Tonight</h2>
+                <p class="subtitle">Get the complete blueprint that transforms you back into the man she can't resist</p>
+                <div class="price">$19</div>
+                <a href="https://buy.stripe.com/5kQ3co0zIbPccmubVc6Vq0j" class="buy-button" target="_blank">Get Instant Access</a>
+                <p style="margin-top: 20px; color: rgba(255,255,255,0.8); font-size: 1rem;">Instant download • Start tonight • 30-day money-back guarantee</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="urgency-section">
+        <div class="container">
+            <h2>Don't Wait Until It's Too Late</h2>
+            <p class="urgency-text">Every day you wait, the polarity dies a little more. While you're hoping it fixes itself, she's losing attraction and considering her options. The men who understand this psychology act fast - and save their relationships.</p>
+            <a href="https://buy.stripe.com/5kQ3co0zIbPccmubVc6Vq0j" class="final-cta" target="_blank">Reignite Her Desire Now</a>
+            <p style="margin-top: 30px; color: #b91c1c; font-size: 1.1rem;">⚡ Start the transformation tonight</p>
+        </div>
+    </section>
+    
+    <footer style="background: #000; padding: 40px 0; text-align: center; color: #666;">
+        <div class="container">
+            <p>&copy; 2025 Reignite Her Passion. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">Transform your relationship through proven psychology</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Add interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Add click tracking for buttons
+            const buttons = document.querySelectorAll('.buy-button, .final-cta, .early-cta-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // You can add analytics tracking here
+                    console.log('Purchase button clicked');
+                });
+            });
+            
+            // Animate passion meter on scroll
+            const meter = document.querySelector('.meter-value');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        meter.style.animation = 'none';
+                        setTimeout(() => {
+                            meter.style.animation = 'meter-pulse 2s ease-in-out infinite';
+                        }, 100);
+                    }
+                });
+            });
+            observer.observe(meter);
+        });
+        
+        // Add meter pulse animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes meter-pulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
